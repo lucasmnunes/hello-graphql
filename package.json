@@ -1,0 +1,20 @@
+{
+  "name": "hello-graphql",
+  "version": "1.0.0",
+  "description": "A soft project to exercise about queries and mutations in GraphQL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasmnunes/hello-graphql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasmnunes/hello-graphql/issues"
+  },
+  "homepage": "https://github.com/lucasmnunes/hello-graphql#readme"
+}
