@@ -4,7 +4,7 @@
   "description": "A soft project to exercise about queries and mutations in GraphQL.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/lucasmnunes/hello-graphql/issues"
   },
-  "homepage": "https://github.com/lucasmnunes/hello-graphql#readme"
+  "homepage": "https://github.com/lucasmnunes/hello-graphql#readme",
+  "dependencies": {
+    "apollo-server": "^2.12.0",
+    "graphql": "^15.0.0"
+  },
+  "devDependencies": {    
+    "nodemon": "^2.0.3"
+  }
 }
