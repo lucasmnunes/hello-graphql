@@ -1,5 +1,5 @@
-const Query = require('./Query');
+const Query = require('./Query.js');
 
 module.exports = {
-    Query   
+    Query
 }
