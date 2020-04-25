@@ -19,9 +19,10 @@
   "homepage": "https://github.com/lucasmnunes/hello-graphql#readme",
   "dependencies": {
     "apollo-server": "^2.12.0",
-    "graphql": "^15.0.0"
+    "graphql": "^15.0.0",
+    "graphql-import": "^1.0.2"
   },
-  "devDependencies": {    
+  "devDependencies": {
     "nodemon": "^2.0.3"
   }
 }
