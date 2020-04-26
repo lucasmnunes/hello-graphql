@@ -4,7 +4,7 @@
   "description": "A soft project to exercise about queries and mutations in GraphQL.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon --ext js,graphql"
   },
   "repository": {
     "type": "git",
