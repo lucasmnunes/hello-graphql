@@ -1,4 +1,5 @@
 type Query {
     hi: String!
-    getDrivers: [Driver]
+    drivers: [Driver]
+    driver(id: ID): Driver
 }
