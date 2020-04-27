@@ -1,3 +1,5 @@
 type Mutation {
-    addDriver(dados: DriverInput): Driver!
+    addDriver(data: DriverInput): Driver!
+    deleteDriver(filter: DriverFilter): Driver
+    alterDriver(filter: DriverFilter!, data: DriverInput!) : Driver
 }

@@ -10,3 +10,8 @@ input DriverInput {
     name: String
     country: String
 }
+
+input DriverFilter {
+    id: Int
+    name: String
+}
