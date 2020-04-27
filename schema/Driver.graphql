@@ -5,3 +5,8 @@ type Driver {
     country: String
     #birth: Date
 }
+
+input DriverInput {
+    name: String
+    country: String
+}

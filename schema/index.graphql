@@ -1,4 +1,5 @@
 #import Query from 'Query.graphql'
 #import Driver from 'Driver.graphql'
+#import Mutation from 'Mutation.graphql'
 
 scalar Date
