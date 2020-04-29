@@ -19,12 +19,16 @@ After doing the above steps:
 # Queries
 After Apollo Server is running:
 ```query { hi }```
-```drivers { id, name, country }```
-```driver(id: 1) { name }```
+
+```query { drivers { id, name, country } }```
+
+```query { driver(id: 1) { name } }```
 
 # Mutations
 After Apollo Server is running:
 
 ```mutation { addDriver ( data: {	name: "New Pilot Name", country: "New Pilot Country" } ) { id, name } }```
+
 ```mutation { alterDriver (filter: { id: 1 } data: { name: "New name", country: "New Country" } ) { id, name } }```
+
 ```mutation { deleteDriver ( filter: { id: 4 } ) { id, name } }```
