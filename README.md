@@ -1,30 +1,31 @@
 # hello-graphql
 A soft project to exercise about queries and mutations in GraphQL.
 
-## To Execute
+### To Execute
 OBS: you must have NPM installed.
 
 1. Clone the repository;
 2. In "hello-graphql" folder, run ```npm install``` to install all project dependencies;
 3. Run ```npm start``` to star the application.
 
-## To Use
+### To Use
 After doing the above steps:
 
 1. Open your favorite browser;
 2. Type ```localhost:4000```.
 
-## Examples
+### Examples
 
-# Queries
+##### Queries
 After Apollo Server is running:
+
 ```query { hi }```
 
-```query { drivers { id, name, country } }```
+```drivers { id, name, country }```
 
-```query { driver(id: 1) { name } }```
+```driver(id: 1) { name }```
 
-# Mutations
+##### Mutations
 After Apollo Server is running:
 
 ```mutation { addDriver ( data: {	name: "New Pilot Name", country: "New Pilot Country" } ) { id, name } }```
