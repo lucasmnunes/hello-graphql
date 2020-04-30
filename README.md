@@ -6,7 +6,7 @@ OBS: you must have NPM installed.
 
 1. Clone the repository;
 2. In "hello-graphql" folder, run ```npm install``` to install all project dependencies;
-3. Run ```npm start``` to star the application.
+3. Run ```npm start``` to start the application.
 
 ### To Use
 After doing the above steps:
