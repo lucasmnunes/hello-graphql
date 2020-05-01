@@ -2,4 +2,7 @@ type Mutation {
     addDriver(data: DriverInput): Driver!
     deleteDriver(filter: DriverFilter): Driver
     alterDriver(filter: DriverFilter!, data: DriverInput!) : Driver
+    addTeam(data: TeamInput): Team!
+    deleteTeam(filter:TeamFilter): Team
+    alterTeam(filter: TeamFilter!, data: TeamInput!) : Team
 }

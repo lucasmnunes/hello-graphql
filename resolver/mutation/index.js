@@ -1,5 +1,7 @@
-const driver = require('./Driver')
+const driver = require('./Driver');
+const team = require('./Team');
 
 module.exports = {
-    ...driver
+    ...driver,
+    ...team
 }

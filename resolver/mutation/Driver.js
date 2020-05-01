@@ -1,4 +1,4 @@
-const { drivers, sequence } = require('../../data/data.js')
+const { drivers, sequenceDriver } = require('../../data/data.js')
 
 module.exports = {
     addDriver(_, { data }) {
@@ -9,7 +9,7 @@ module.exports = {
         }
 
         const driver = {
-            id: sequence(),
+            id: sequenceDriver(),
             ...data
         }
 
@@ -54,7 +54,7 @@ function getDriverIndexByDriverFilter(filter) {
     if (id) {
         driverIndex = drivers.findIndex(d => d.id === id);
     } else if (name) {
-        driverIndex = driver.findIndex(d => d.name === names)
+        driverIndex = driver.findIndex(d => d.name === name)
     }
 
     return driverIndex;

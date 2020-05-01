@@ -2,4 +2,6 @@ type Query {
     hi: String!
     drivers: [Driver]
     driver(id: ID): Driver
+    teams: [Team]
+    team(id: ID): Team
 }

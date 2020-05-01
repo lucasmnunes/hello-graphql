@@ -1,18 +1,16 @@
-type Driver {
+type Team {
     id: ID!
     name: String!
     country: String
-    number: Int!
-    team: Team
-    #birth: Date
 }
 
-input DriverInput {
+input TeamInput {
     name: String
     country: String
 }
 
-input DriverFilter {
+input TeamFilter {
     id: Int
     name: String
+    country: String
 }
