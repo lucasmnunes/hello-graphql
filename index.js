@@ -1,13 +1,13 @@
-const { ApolloServer, gql } = require('apollo-server');
-const { importSchema } = require('graphql-import');
+const {ApolloServer, gql} = require('apollo-server');
+const {importSchema} = require('graphql-import');
 const resolvers = require('./resolver');
 const schemaPath = './schema/index.graphql';
 
 const server = new ApolloServer({
-    typeDefs: importSchema(schemaPath), 
+    typeDefs: importSchema(schemaPath),
     resolvers
 })
 
-server.listen().then(({ url }) => {
+server.listen().then(({url}) => {
     console.log(`Server running... ${url}`);
 })

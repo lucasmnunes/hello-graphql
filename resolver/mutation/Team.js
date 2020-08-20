@@ -1,7 +1,7 @@
-const { teams, sequenceTeam } = require('../../data/data.js')
+const {teams, sequenceTeam} = require('../../data/data.js')
 
 module.exports = {
-    addTeam(_, { data }) {
+    addTeam(_, {data}) {
         const teamExists = teams.some(t => t.name === data.name);
 
         if (teamExists) {
@@ -14,12 +14,12 @@ module.exports = {
         }
 
         teams.push(team);
-        return team; 
+        return team;
     },
 
-    deleteTeam(_, { filter }) {
+    deleteTeam(_, {filter}) {
         const teamIndex = getTeamIndexByTeamFilter(filter);
-        
+
         if (!isIndexValid(teamIndex)) {
             return null;
         }
@@ -28,20 +28,20 @@ module.exports = {
         return teamsDeleted ? teamsDeleted[0] : null;
     },
 
-    alterTeam(_, { filter, data}) {
+    alterTeam(_, {filter, data}) {
         const teamIndex = getTeamIndexByTeamFilter(filter);
-        
+
         if (!isIndexValid(teamIndex)) {
             return null;
         }
-        
+
         if (nonNull(data.name)) {
             teams[teamIndex].name = data.name;
         }
 
         if (nonNull(data.country)) {
             teams[teamIndex].country = data.country;
-        }       
+        }
 
         return teams[teamIndex];
     }
@@ -50,7 +50,7 @@ module.exports = {
 function getTeamIndexByTeamFilter(filter) {
     let teamIndex = -1;
 
-    const { id, name, country } = filter;
+    const {id, name, country} = filter;
     if (id) {
         teamIndex = teams.findIndex(t => t.id === id);
     } else if (name) {

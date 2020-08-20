@@ -1,9 +1,11 @@
 let idDriver = 1;
+
 function sequenceDriver() {
     return idDriver++;
 }
 
 let idTeam = 1;
+
 function sequenceTeam() {
     return idTeam++;
 }

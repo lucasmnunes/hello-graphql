@@ -1,7 +1,7 @@
-const { drivers, sequenceDriver } = require('../../data/data.js')
+const {drivers, sequenceDriver} = require('../../data/data.js')
 
 module.exports = {
-    addDriver(_, { data }) {
+    addDriver(_, {data}) {
         const driverExists = drivers.some(d => d.name === data.name);
 
         if (driverExists) {
@@ -14,12 +14,12 @@ module.exports = {
         }
 
         drivers.push(driver);
-        return driver; 
+        return driver;
     },
 
-    deleteDriver(_, { filter }) {
+    deleteDriver(_, {filter}) {
         const driverIndex = getDriverIndexByDriverFilter(filter);
-        
+
         if (!isIndexValid(driverIndex)) {
             return null;
         }
@@ -28,20 +28,20 @@ module.exports = {
         return driversDeleted ? driversDeleted[0] : null;
     },
 
-    alterDriver(_, { filter, data}) {
+    alterDriver(_, {filter, data}) {
         const driverIndex = getDriverIndexByDriverFilter(filter);
-        
+
         if (!isIndexValid(driverIndex)) {
             return null;
         }
-        
+
         if (nonNull(data.name)) {
             drivers[driverIndex].name = data.name;
         }
 
         if (nonNull(data.country)) {
             drivers[driverIndex].country = data.country;
-        }       
+        }
 
         return drivers[driverIndex];
     }
@@ -50,7 +50,7 @@ module.exports = {
 function getDriverIndexByDriverFilter(filter) {
     let driverIndex = -1;
 
-    const { id, name } = filter;
+    const {id, name} = filter;
     if (id) {
         driverIndex = drivers.findIndex(d => d.id === id);
     } else if (name) {

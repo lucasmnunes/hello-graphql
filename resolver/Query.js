@@ -1,4 +1,4 @@
-const { drivers, teams } = require('../data/data.js')
+const {drivers, teams} = require('../data/data.js')
 
 module.exports = {
     hi() {
