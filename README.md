@@ -28,8 +28,21 @@ After Apollo Server is running:
 ##### Mutations
 After Apollo Server is running:
 
-```mutation { addDriver ( data: {	name: "New Pilot Name", country: "New Pilot Country" } ) { id, name } }```
-
-```mutation { alterDriver (filter: { id: 1 } data: { name: "New name", country: "New Country" } ) { id, name } }```
-
-```mutation { deleteDriver ( filter: { id: 4 } ) { id, name } }```
+```
+mutation { 
+    
+    addDriver ( 
+        data: {	name: "New Pilot Name", country: "New Pilot Country" }
+    ) { id, name }
+    
+    alterDriver (
+        filter: { id: 1 } 
+        data: { name: "New name", country: "New Country" } 
+    ) { id, name }
+    
+    deleteDriver ( 
+        filter: { id: 4 } 
+    ) { id, name }
+    
+}
+```
