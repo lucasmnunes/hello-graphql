@@ -19,7 +19,8 @@ After doing the above steps:
 ##### Queries:
 After Apollo Server is running:
 
-```query {
+```
+query {
 
 	drivers { 
 		id
