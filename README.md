@@ -16,16 +16,26 @@ After doing the above steps:
 
 ### Examples
 
-##### Queries
+##### Queries:
 After Apollo Server is running:
 
-```query { hi }```
+```query {
 
-```drivers { id, name, country }```
+	drivers { 
+		id
+		name
+		country 
+	}
+	
+	driver(id: 1) { 
+		name
+		country
+	}
 
-```driver(id: 1) { name }```
+}
+```
 
-##### Mutations
+##### Mutations:
 After Apollo Server is running:
 
 ```
